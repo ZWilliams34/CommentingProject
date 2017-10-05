@@ -9,17 +9,13 @@ namespace CommentingProject {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Form1 form;
-        LinkedList[] posts;
-        int postsOnPage;
+        LinkedList oP;
 
         public Game1() {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            posts = new LinkedList[5];
-            postsOnPage = 0;
+            oP = new LinkedList("Despite the constant negative press covfefe");
         }
-
-        public void post(String value) { if(postsOnPage < 5) { posts[postsOnPage] = new LinkedList(value); } }
 
         protected override void Initialize() {
             form = new Form1();
