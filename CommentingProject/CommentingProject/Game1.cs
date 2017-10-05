@@ -19,7 +19,7 @@ namespace CommentingProject {
             postsOnPage = 0;
         }
 
-        public void post(String value) { if(postsOnPage < 5) { posts[postsOnPage] = new LinkedList(value); } }
+        public void post(String author, String value) { if(postsOnPage < 5) { posts[postsOnPage] = new LinkedList(author, value); } }
 
         protected override void Initialize() {
             form = new Form1();

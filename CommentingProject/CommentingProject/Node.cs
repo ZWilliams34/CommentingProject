@@ -9,15 +9,19 @@ namespace CommentingProject {
     class Node {
         private ArrayList next;
         private Node previous;
-        private String value;
+        private String author;
+        private String post;
 
-        public Node(String valueus, Node previousus) {
-            value = valueus;
+        public Node(String auth, String posted, Node previousus) {
+            author = auth;
+            post = posted;
             previous = previousus;
             next = new ArrayList();
         }
 
-        public String getValue() { return value; }
+        public String getAuthor() { return author; }
+
+        public String getPost() { return post; }
 
         public Node getPrevious() { return previous; }
 
