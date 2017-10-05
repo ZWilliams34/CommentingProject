@@ -14,14 +14,9 @@ namespace CommentingProject {
         public Game1() {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            oP = new LinkedList("Despite the constant negative press covfefe");
+            oP = new LinkedList("Despite the constant negative press covfefe", "Dotard Drumpf Covfefe");
         }
 
-<<<<<<< HEAD
-=======
-        public void post(String author, String value) { if(postsOnPage < 5) { posts[postsOnPage] = new LinkedList(author, value); } }
-
->>>>>>> 154f7bffc333746d9de5075317e82f169ffa4cbd
         protected override void Initialize() {
             form = new Form1();
             form.Show();
