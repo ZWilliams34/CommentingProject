@@ -21,8 +21,6 @@ namespace CommentingProject
         {
 
         }
-<<<<<<< HEAD
-=======
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -48,6 +46,5 @@ namespace CommentingProject
         {
 
         }
->>>>>>> 154f7bffc333746d9de5075317e82f169ffa4cbd
     }
 }
