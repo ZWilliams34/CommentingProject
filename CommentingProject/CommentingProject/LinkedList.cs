@@ -13,7 +13,7 @@ namespace CommentingProject {
 
         public void post(String value) {
             if(head == null) {
-                head = new Node(value, null, null);
+                head = new Node(value, null);
             } else {
 
             }
