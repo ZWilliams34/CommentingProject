@@ -14,7 +14,7 @@ namespace CommentingProject {
         public Game1() {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            oP = new LinkedList("Despite the contant negative press covfefe", "Dotard Drumpf Covfefe");
+            oP = new LinkedList("Despite the constant negative press covfefe", "Dotard Drumpf Covfefe");
         }
 
         protected override void Initialize() {
