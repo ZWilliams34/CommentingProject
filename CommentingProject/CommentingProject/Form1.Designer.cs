@@ -23,7 +23,6 @@
         #region Windows Form Designer generated code
 
         private void InitializeComponent() {
-            this.SuspendLayout();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -100,10 +99,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Post Entry";
+            this.Text = "Comment";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

@@ -8,10 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CommentingProject
-{
-    public partial class Form1 : Form
-    {
+namespace CommentingProject {
+    public partial class Form1 : Form {
+        public String enteredAuthor;
         public Form1()
         {
             InitializeComponent();
@@ -29,7 +28,7 @@ namespace CommentingProject
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            enteredAuthor = e.ToString();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
