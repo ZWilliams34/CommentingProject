@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentingProject", "CommentingProject\CommentingProject.csproj", "{B6ABE313-9897-43F1-BDD9-97380E35A45E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6ABE313-9897-43F1-BDD9-97380E35A45E}.Debug|x86.ActiveCfg = Debug|x86
+		{B6ABE313-9897-43F1-BDD9-97380E35A45E}.Debug|x86.Build.0 = Debug|x86
+		{B6ABE313-9897-43F1-BDD9-97380E35A45E}.Release|x86.ActiveCfg = Release|x86
+		{B6ABE313-9897-43F1-BDD9-97380E35A45E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8CD970F-7661-41D3-8A4D-DD09829A20AB}
+	EndGlobalSection
+EndGlobal
