@@ -14,4 +14,4 @@ namespace CommentingProject {
 
         public void remove(Node removal)  { if(removal == head) { head = null; } else { removal.getPrevious().getNext().Remove(removal) ; } }
     }
-}
+} 
