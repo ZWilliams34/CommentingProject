@@ -8,6 +8,7 @@ namespace CommentingProject {
     public class Game1 : Game {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Form1 form;
         LinkedList[] posts;
         int postsOnPage;
 
@@ -20,7 +21,11 @@ namespace CommentingProject {
 
         public void post(String value) { if(postsOnPage < 5) { posts[postsOnPage] = new LinkedList(value); } }
 
-        protected override void Initialize() { base.Initialize(); }
+        protected override void Initialize() {
+            form = new Form1();
+            form.Show();
+            base.Initialize();
+        }
 
         protected override void LoadContent() { spriteBatch = new SpriteBatch(GraphicsDevice); }
 
@@ -34,6 +39,6 @@ namespace CommentingProject {
         protected override void Draw(GameTime gameTime) {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             base.Draw(gameTime);
-        }
+        } 
     }
 }

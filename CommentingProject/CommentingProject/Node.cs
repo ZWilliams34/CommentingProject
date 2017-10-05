@@ -24,6 +24,5 @@ namespace CommentingProject {
         public ArrayList getNext() { return next; }
 
         public void addNext(Node newReply) => next.Add(newReply);
-
     }
 }
