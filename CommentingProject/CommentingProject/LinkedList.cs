@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace CommentingProject {
     class LinkedList {
         Node head;
+<<<<<<< HEAD
         public LinkedList() {
             head = null;
         }
@@ -18,5 +19,8 @@ namespace CommentingProject {
 
             }
         }
+=======
+        public LinkedList(String value) { head = new Node(value, null); } 
+>>>>>>> 4639c03e2d48fd476b9d6eda489f2147c5f5ec77
     }
 }
