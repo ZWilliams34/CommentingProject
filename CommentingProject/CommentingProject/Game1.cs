@@ -1,16 +1,24 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
+using System.Collections;
 
 namespace CommentingProject {
     public class Game1 : Game {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        LinkedList[] posts;
+        int postsOnPage;
 
         public Game1() {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            posts = new LinkedList[5];
+            postsOnPage = 0;
         }
+
+        public void post(String value) { if(postsOnPage < 5) { posts[postsOnPage] = new LinkedList(value); } }
 
         protected override void Initialize() { base.Initialize(); }
 

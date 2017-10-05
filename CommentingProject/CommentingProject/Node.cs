@@ -5,35 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommentingProject
-{
-    class Node
-    {
+namespace CommentingProject {
+    class Node {
         private ArrayList next;
         private Node previous;
         private String value;
 
-        public Node(String valueus, Node previousus)
-        {
+        public Node(String valueus, Node previousus) {
             value = valueus;
             previous = previousus;
             next = new ArrayList();
         }
 
-        public String getValue()
-        {
-            return value;
-        }
+        public String getValue() { return value; }
 
-        public Node getPrevious()
-        {
-            return previous;
-        }
+        public Node getPrevious() { return previous; }
 
-        public ArrayList getNext()
-        {
-            return next;
-        }
+        public ArrayList getNext() { return next; }
 
         public void addNext(Node newReply) => next.Add(newReply);
     }
