@@ -21,5 +21,33 @@ namespace CommentingProject
         {
 
         }
+<<<<<<< HEAD
+=======
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> 154f7bffc333746d9de5075317e82f169ffa4cbd
     }
 }
