@@ -10,6 +10,7 @@ namespace CommentingProject {
         SpriteBatch spriteBatch;
         Form1 form;
         LinkedList oP;
+        Node temp;
         Rectangle postWindowSize, deleteButtonSize, respondButtonSize;
         SpriteFont authorWriting;
         Texture2D texture;
@@ -46,6 +47,7 @@ namespace CommentingProject {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape)) Exit();
             if (form.getPressed() && oP == null) {
                 oP = new LinkedList(form.getAuthor(), form.getValue());
+                temp = oP.getHead();
                 form.Hide();
             } else if (form.getPressed() && oP != null) {
 
