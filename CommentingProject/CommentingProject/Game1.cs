@@ -47,8 +47,7 @@ namespace CommentingProject {
             if (form.getPressed() && discussion == null) {
                 discussion = new LinkedList(form.getAuthor(), form.getValue());
                 form.Hide();
-            } else if (form.getPressed() && discussion != null) {
-                discussion.comment(form.getAuthor(), form.getValue(), );
+            } else if (form.getPressed()) {
                 form.Hide();
             }
             base.Update(gameTime);
