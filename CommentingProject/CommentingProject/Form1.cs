@@ -24,8 +24,8 @@ namespace CommentingProject {
 
         private void button2_Click(object sender, EventArgs e) { }
 
-        private String getAuthor() { return "a"; }
+        private String getAuthor() { return enteredAuthor; }
 
-        private String getValue() { return "a"; }
+        private String getValue() { return enteredContent; }
     }
 }
