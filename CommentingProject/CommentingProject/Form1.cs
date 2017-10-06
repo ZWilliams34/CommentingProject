@@ -24,18 +24,19 @@ namespace CommentingProject {
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            tempAuthor = e.ToString();
+            tempAuthor = textBox1.Text;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            tempContent = e.ToString();
+            tempContent = textBox2.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             enteredAuthor = tempAuthor;
             enteredContent = tempContent;
+            //MessageBox.Show(this.button1.Text);
             buttClicked = true;
         }
 
