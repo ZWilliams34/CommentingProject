@@ -57,8 +57,12 @@ namespace CommentingProject {
             spriteBatch.Begin();
             if(oP != null) {
                 spriteBatch.Draw(texture, postWindowSize, Color.White);
+                spriteBatch.Draw(texture, deleteButtonSize, Color.White);
+                spriteBatch.Draw(texture, respondButtonSize, Color.White);
                 spriteBatch.DrawString(authorWriting, "Author: " + form.getAuthor(), new Vector2(180, 157), Color.Black);
                 spriteBatch.DrawString(authorWriting, "Post: " + form.getValue(), new Vector2(180, 271), Color.Black);
+                spriteBatch.DrawString(authorWriting, "Delete", new Vector2(280, 257), Color.Black);
+                spriteBatch.DrawString(authorWriting, "Respond", new Vector2(280, 371), Color.Black);
             }
             
             spriteBatch.End();
