@@ -9,8 +9,7 @@ namespace CommentingProject {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Form1 form;
-        LinkedList oP;
-        Node temp;
+        LinkedList discussion;
         Rectangle postWindowSize, deleteButtonSize, respondButtonSize;
         SpriteFont authorWriting;
         Texture2D texture;
@@ -19,7 +18,7 @@ namespace CommentingProject {
         public Game1() {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            oP = null;
+            discussion = null;
         }
 
         protected override void Initialize() {
@@ -45,12 +44,11 @@ namespace CommentingProject {
 
         protected override void Update(GameTime gameTime) {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape)) Exit();
-            if (form.getPressed() && oP == null) {
-                oP = new LinkedList(form.getAuthor(), form.getValue());
-                temp = oP.getHead();
+            if (form.getPressed() && discussion == null) {
+                discussion = new LinkedList(form.getAuthor(), form.getValue());
                 form.Hide();
-            } else if (form.getPressed() && oP != null) {
-                oP.comment(form.getAuthor(), form.getValue(), );
+            } else if (form.getPressed()) {
+                
                 form.Hide();
             }
             base.Update(gameTime);
@@ -64,7 +62,7 @@ namespace CommentingProject {
             spriteBatch.Draw(texture, respondButtonSize, Color.White);
             spriteBatch.DrawString(authorWriting, "Author: " + form.getAuthor(), new Vector2(86, 28), Color.Black);
             spriteBatch.DrawString(authorWriting, "Post: " + form.getValue(), new Vector2(86, 84), Color.Black);
-            if (oP != null) {
+            if (discussion != null) {
                 spriteBatch.DrawString(authorWriting, "Delete", new Vector2(86, 140), Color.Black);
                 spriteBatch.DrawString(authorWriting, "Respond", new Vector2(238, 140), Color.Black);
             } else {
