@@ -48,7 +48,6 @@ namespace CommentingProject {
                 discussion = new LinkedList(form.getAuthor(), form.getValue());
                 form.Hide();
             } else if (form.getPressed()) {
-                
                 form.Hide();
             }
             base.Update(gameTime);
@@ -57,9 +56,9 @@ namespace CommentingProject {
         protected override void Draw(GameTime gameTime) {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
-            spriteBatch.Draw(texture, postWindowSize, Color.White);
-            spriteBatch.Draw(texture, deleteButtonSize, Color.White);
-            spriteBatch.Draw(texture, respondButtonSize, Color.White);
+            spriteBatch.Draw(texture, new Rectangle(0, 0, 380, 200), Color.White);
+            spriteBatch.Draw(texture, new Rectangle(86, 140, 76, 28), Color.White);
+            spriteBatch.Draw(texture, new Rectangle(238, 140, 76, 28), Color.White);
             spriteBatch.DrawString(authorWriting, "Author: " + form.getAuthor(), new Vector2(86, 28), Color.Black);
             spriteBatch.DrawString(authorWriting, "Post: " + form.getValue(), new Vector2(86, 84), Color.Black);
             if (discussion != null) {
@@ -68,6 +67,15 @@ namespace CommentingProject {
             } else {
                 spriteBatch.DrawString(authorWriting, "Post", new Vector2(86, 140), Color.Black);
                 spriteBatch.DrawString(authorWriting, "Exit", new Vector2(238, 140), Color.Black);
+            }
+            for(int i = 0; i <= comments; i++) {
+                spriteBatch.Draw(texture, new Rectangle(0, 0 + (comments * 200), 380, 200), Color.White);
+                spriteBatch.Draw(texture, new Rectangle(86, 140 + (comments * 200), 76, 28), Color.White);
+                spriteBatch.Draw(texture, new Rectangle(238, 140 + (comments * 200), 76, 28), Color.White);
+                spriteBatch.DrawString(authorWriting, "Author: " + form.getAuthor(), new Vector2(86, 28 + (comments * 200)), Color.Black);
+                spriteBatch.DrawString(authorWriting, "Post: " + form.getValue(), new Vector2(86, 84 + (comments * 200)), Color.Black);
+                spriteBatch.DrawString(authorWriting, "Delete", new Vector2(86, 140 + (comments * 200)), Color.Black);
+                spriteBatch.DrawString(authorWriting, "Respond", new Vector2(238, 140 + (comments * 200)), Color.Black);
             }
             spriteBatch.End();
             base.Draw(gameTime);
