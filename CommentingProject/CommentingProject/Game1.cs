@@ -23,8 +23,8 @@ namespace CommentingProject {
             this.IsMouseVisible = true;
             form = new Form1();
             form.Show();
-            graphics.PreferredBackBufferWidth = 600;  // set this value to the desired width of your window
-            graphics.PreferredBackBufferHeight = 600;   // set this value to the desired height of your window
+            graphics.PreferredBackBufferWidth = 1900;  // set this value to the desired width of your window
+            graphics.PreferredBackBufferHeight = 1000;   // set this value to the desired height of your window
             graphics.ApplyChanges();
             postWindowSize = new Rectangle(100, 100, 400, 400);
             deleteButtonSize = new Rectangle(180, 385, 80, 57);
