@@ -48,9 +48,9 @@ namespace CommentingProject {
 
         public String getValue() { return enteredContent; }
 
-        public void setAuthor() { enteredAuthor = ""; }
+        public void setAuthor(String val) { enteredAuthor = val; }
 
-        public void setValue() { enteredContent = ""; }
+        public void setValue(String val) { enteredContent = val; }
 
         public bool getPressed() { bool temp = buttClicked; buttClicked = false; return temp; }
     }
