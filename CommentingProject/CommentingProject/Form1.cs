@@ -8,17 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-<<<<<<< HEAD
-namespace CommentingProject
-{
-    public partial class Form1 : Form
-    {
-        private String author, value;
-=======
 namespace CommentingProject {
     public partial class Form1 : Form {
         public String enteredAuthor;
->>>>>>> de4f0e15851b9bbedf7c714a45f3b2c8b40bfecd
         public Form1()
         {
             InitializeComponent();
