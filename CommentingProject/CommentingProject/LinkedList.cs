@@ -12,6 +12,6 @@ namespace CommentingProject {
 
         public void comment(String author, String value, Node previous) { previous.addNext(new Node(author, value, previous)); }
 
-        public void remove(Node removal)  { if(removal == head) { head = null; } else { removal.getPrevious().getNext().Remove(removal) ; } }
+        public void remove(Node removal) { if (removal == head) { head = null; } else { removal.getPrevious().getNext().Remove(removal); } }
     }
 } 
