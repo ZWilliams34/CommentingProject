@@ -56,7 +56,7 @@ namespace CommentingProject {
         protected override void Draw(GameTime gameTime) {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
-            spriteBatch.Draw(texture, new Rectangle(0, 0, 380, 200), Color.White);
+            /*spriteBatch.Draw(texture, new Rectangle(0, 0, 380, 200), Color.White);
             spriteBatch.Draw(texture, new Rectangle(86, 140, 76, 28), Color.White);
             spriteBatch.Draw(texture, new Rectangle(238, 140, 76, 28), Color.White);
             spriteBatch.DrawString(authorWriting, "Author: " + form.getAuthor(), new Vector2(86, 28), Color.Black);
@@ -76,7 +76,7 @@ namespace CommentingProject {
                 spriteBatch.DrawString(authorWriting, "Post: " + form.getValue(), new Vector2(86, 84 + (comments * 200)), Color.Black);
                 spriteBatch.DrawString(authorWriting, "Delete", new Vector2(86, 140 + (comments * 200)), Color.Black);
                 spriteBatch.DrawString(authorWriting, "Respond", new Vector2(238, 140 + (comments * 200)), Color.Black);
-            }
+            }*/
             spriteBatch.End();
             base.Draw(gameTime);
         } 
