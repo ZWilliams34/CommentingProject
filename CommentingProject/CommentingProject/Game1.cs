@@ -50,7 +50,8 @@ namespace CommentingProject {
                 temp = oP.getHead();
                 form.Hide();
             } else if (form.getPressed() && oP != null) {
-
+                oP.comment(form.getAuthor(), form.getValue(), );
+                form.Hide();
             }
             base.Update(gameTime);
         }
