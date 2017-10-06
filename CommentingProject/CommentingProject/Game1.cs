@@ -32,7 +32,10 @@ namespace CommentingProject {
             base.Initialize();
         }
 
-        protected override void LoadContent() { spriteBatch = new SpriteBatch(GraphicsDevice); }
+        protected override void LoadContent() {
+            spriteBatch = new SpriteBatch(GraphicsDevice);
+            authorWriting = Content.Load<SpriteFont>("Author");
+        }
 
         protected override void UnloadContent() { }
 
@@ -51,6 +54,10 @@ namespace CommentingProject {
 
         protected override void Draw(GameTime gameTime) {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            spriteBatch.Begin();
+            spriteBatch.DrawString(authorWriting, "Author: " + form.getAuthor(), new Vector2(180, 157), Color.Black);
+            spriteBatch.DrawString(authorWriting, "Post: " + form.getValue(), new Vector2(180, 271), Color.Black);
+            spriteBatch.End();
             base.Draw(gameTime);
         } 
     }
