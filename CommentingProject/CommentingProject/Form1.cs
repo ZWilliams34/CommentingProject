@@ -12,6 +12,7 @@ namespace CommentingProject
 {
     public partial class Form1 : Form
     {
+        private String author, value;
         public Form1()
         {
             InitializeComponent();
@@ -43,6 +44,16 @@ namespace CommentingProject
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private String getAuthor()
+        {
+
+        }
+
+        private String getValue()
         {
 
         }
