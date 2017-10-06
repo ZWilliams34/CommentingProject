@@ -56,16 +56,6 @@ namespace CommentingProject {
         protected override void Draw(GameTime gameTime) {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
-<<<<<<< HEAD
-            if(oP != null) {
-                spriteBatch.Draw(texture, postWindowSize, Color.White);
-                spriteBatch.Draw(texture, deleteButtonSize, Color.White);
-                spriteBatch.Draw(texture, respondButtonSize, Color.White);
-                spriteBatch.DrawString(authorWriting, "Author: " + form.getAuthor(), new Vector2(180, 157), Color.Black);
-                spriteBatch.DrawString(authorWriting, "Post: " + form.getValue(), new Vector2(180, 271), Color.Black);
-                spriteBatch.DrawString(authorWriting, "Delete", new Vector2(280, 257), Color.Black);
-                spriteBatch.DrawString(authorWriting, "Respond", new Vector2(280, 371), Color.Black);
-=======
             spriteBatch.Draw(texture, postWindowSize, Color.White);
             spriteBatch.Draw(texture, deleteButtonSize, Color.White);
             spriteBatch.Draw(texture, respondButtonSize, Color.White);
@@ -77,7 +67,6 @@ namespace CommentingProject {
             } else {
                 spriteBatch.DrawString(authorWriting, "Post", new Vector2(86, 140), Color.Black);
                 spriteBatch.DrawString(authorWriting, "Exit", new Vector2(238, 140), Color.Black);
->>>>>>> 227c6a59ae28e96fd9272a22bee8a399c5f9a238
             }
             spriteBatch.End();
             base.Draw(gameTime);
