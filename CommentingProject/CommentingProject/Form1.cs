@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CommentingProject {
     public partial class Form1 : Form {
-        public String enteredAuthor;
+        public String enteredAuthor, enteredContent;
         public Form1()
         {
             InitializeComponent();
@@ -33,7 +33,7 @@ namespace CommentingProject {
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            enteredContent = e.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,17 +43,18 @@ namespace CommentingProject {
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            enteredAuthor = "";
+            enteredContent = "";
         }
 
         private String getAuthor()
         {
-
+            return enteredAuthor;
         }
 
         private String getValue()
         {
-
+            return enteredContent;
         }
     }
 }
