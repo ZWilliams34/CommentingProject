@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CommentingProject {
     public partial class Form1 : Form {
-        public String enteredAuthor;
+        public String enteredAuthor, enteredContent;
 
         public Form1() { InitializeComponent(); }
 
