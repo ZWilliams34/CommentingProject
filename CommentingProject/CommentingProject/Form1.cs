@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CommentingProject {
     public partial class Form1 : Form {
-        private String enteredAuthor, enteredContent;
+        private String enteredAuthor, enteredContent, tempAuthor, tempContent;
         private bool buttClicked;
         public Form1()
         {
@@ -24,16 +24,18 @@ namespace CommentingProject {
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            enteredAuthor = e.ToString();
+            tempAuthor = e.ToString();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            enteredContent = e.ToString();
+            tempContent = e.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            enteredAuthor = tempAuthor;
+            enteredContent = tempContent;
             buttClicked = true;
         }
 
