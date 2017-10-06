@@ -10,6 +10,8 @@ namespace CommentingProject {
         SpriteBatch spriteBatch;
         Form1 form;
         LinkedList oP;
+        Rectangle postWindowSize, deleteButtonSize, respondButtonSize;
+        SpriteFont authorWriting, postWriting;
 
         public Game1() {
             graphics = new GraphicsDeviceManager(this);
@@ -21,6 +23,12 @@ namespace CommentingProject {
             this.IsMouseVisible = true;
             form = new Form1();
             form.Show();
+            graphics.PreferredBackBufferWidth = 600;  // set this value to the desired width of your window
+            graphics.PreferredBackBufferHeight = 600;   // set this value to the desired height of your window
+            graphics.ApplyChanges();
+            postWindowSize = new Rectangle(100, 100, 400, 400);
+            deleteButtonSize = new Rectangle(180, 385, 80, 57);
+            respondButtonSize = new Rectangle(340, 385, 80, 57);
             base.Initialize();
         }
 
