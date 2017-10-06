@@ -56,7 +56,10 @@ namespace CommentingProject {
         protected override void Draw(GameTime gameTime) {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
+
             /*spriteBatch.Draw(texture, new Rectangle(0, 0, 380, 200), Color.White);
+
+            spriteBatch.Draw(texture, new Rectangle(0, 0, 380, 200), Color.White);
             spriteBatch.Draw(texture, new Rectangle(86, 140, 76, 28), Color.White);
             spriteBatch.Draw(texture, new Rectangle(238, 140, 76, 28), Color.White);
             spriteBatch.DrawString(authorWriting, "Author: " + form.getAuthor(), new Vector2(86, 28), Color.Black);
