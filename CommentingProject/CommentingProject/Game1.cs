@@ -30,6 +30,14 @@ namespace CommentingProject {
 
         protected override void Update(GameTime gameTime) {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape)) Exit();
+            if (form.getPressed() && oP == null)
+            {
+                oP = new LinkedList(form.getAuthor(), form.getValue());
+                form.Hide();
+            } else if (form.getPressed() && oP != null)
+            {
+
+            }
             base.Update(gameTime);
         }
 

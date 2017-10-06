@@ -48,6 +48,10 @@ namespace CommentingProject {
 
         public String getValue() { return enteredContent; }
 
-        public bool getPressed() { return buttClicked; }
+        public void setAuthor() { enteredAuthor = ""; }
+
+        public void setValue() { enteredContent = ""; }
+
+        public bool getPressed() { bool temp = buttClicked; buttClicked = false; return temp; }
     }
 }
