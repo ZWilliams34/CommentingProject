@@ -18,6 +18,7 @@ namespace CommentingProject {
         }
 
         protected override void Initialize() {
+            this.IsMouseVisible = true;
             form = new Form1();
             form.Show();
             base.Initialize();
